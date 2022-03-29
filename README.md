@@ -6,8 +6,8 @@ A series of daily challenges to reinforce lessons learned from building an insta
 
 - [x] Create a Github Repository named 'nomadcoffee-backend'.
 
-- [ ] Set up a Prisma project.
+- [x] Set up a Prisma project.
 
-- [ ] The project should follow the architecture outlined on the video (.typeDefs.js , .resolvers.js).
+- [x] The project should follow the architecture outlined on the video (.typeDefs.js , .resolvers.js).
 
-- [ ] Use babel, nodemon and dotenv
+- [x] Use babel, nodemon and dotenv

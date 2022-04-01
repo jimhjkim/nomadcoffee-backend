@@ -31,3 +31,15 @@ A series of daily challenges to reinforce lessons learned from building an insta
   - Hash the password
   - Check that the username / email aren't taken
   - Return ok:true or ok:false, error:$error if there is an error.
+
+## Day 4 - 5
+
+Create the following resolvers:
+
+- [x] seeProfile: See any users profile.
+
+- [x] login: Log the user in by returning a JWT or return an error in case the password is wrong.
+
+- [x] editProfile: Change the user's profile, this includes changing password and changing the avatarURL.
+
+- [x] Write some code to protect your resolvers and inject the logged in user to the resolver's context.

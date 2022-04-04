@@ -43,3 +43,11 @@ Create the following resolvers:
 - [x] editProfile: Change the user's profile, this includes changing password and changing the avatarURL.
 
 - [x] Write some code to protect your resolvers and inject the logged in user to the resolver's context.
+
+## Day 6
+
+- [x] Implement Follow / Unfollow functionality.
+
+- [x] Implement followers & following computed fields with pagination on the seeUser resolver (No extra resolvers).
+
+- [x] Implement searchUsers resolver.

@@ -6,6 +6,8 @@
     "dev": "nodemon --exec ts-node src/server --ext ts,js --delay 2",
     "migrate": "npx prisma migrate dev",
     "studio": "npx prisma studio",
+    "build": "npx tsc",
+    "start": "node dist/server",
     "lint": "eslint . --ext .ts",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
   },
@@ -26,6 +28,7 @@
     "@graphql-tools/schema": "^8.3.5",
     "@prisma/client": "^3.11.1",
     "apollo-server": "^3.6.6",
+    "apollo-server-core": "^3.6.7",
     "apollo-server-express": "^3.6.7",
     "bcrypt": "^5.0.1",
     "dotenv": "^16.0.0",
@@ -36,9 +39,6 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.8",
-    "@babel/node": "^7.16.8",
-    "@babel/preset-env": "^7.16.11",
     "@types/bcrypt": "^5.0.0",
     "@types/graphql-upload": "^8.0.11",
     "@types/jsonwebtoken": "^8.5.8",

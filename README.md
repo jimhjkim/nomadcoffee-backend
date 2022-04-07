@@ -77,3 +77,7 @@ Create the following resolvers: `createCoffeeShop`, `seeCoffeeShops` `seeCoffeeS
 - [x] `seeCategories` should list all the `Category` and should have a `totalShops` **computed** field that counts all the `CoffeeShop` inside of the `Category`, it should also have **pagination**
 
 - [x] `editCoffeeShop` should edit a `CoffeeShop`
+
+## Day 9
+
+- [ ] We are finished with the backend! Following the lectures of the section #19 deploy your backend to Heroku. You will also have to configure a PostgreSQL Database. Make sure you select only the free versions of Database and Servers

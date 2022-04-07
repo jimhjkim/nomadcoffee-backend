@@ -1,12 +1,13 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 require('dotenv').config();
+import express from 'express';
 import { ApolloServer } from 'apollo-server-express';
 import { graphqlUploadExpress } from 'graphql-upload';
-import express from 'express';
-import logger from 'morgan';
-import { getUser } from './users/users.utils';
 import { typeDefs, resolvers } from './schema';
+import { getUser } from './users/users.utils';
+import logger from 'morgan';
 import client from './client';
+import { ApolloServerPluginLandingPageGraphQLPlayground } from 'apollo-server-core';
 
 const { PORT } = process.env;
 
@@ -15,6 +16,8 @@ const startApolloServer = async () => {
   const server = new ApolloServer({
     typeDefs,
     resolvers,
+    introspection: true,
+    plugins: [ApolloServerPluginLandingPageGraphQLPlayground()],
     context: async ({ req }) => ({
       loggedInUser: await getUser(req.headers.authorization),
       client
